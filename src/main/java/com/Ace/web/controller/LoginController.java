@@ -10,11 +10,14 @@ public class LoginController {
 	
 	
 	
-	@RequestMapping("/")
+	@RequestMapping(value={"/","/index","/index.jsp"})
     public String home() {
         return "index";
     }
 
-	
+	@RequestMapping(value={"/gngl"})
+    public String gngl() {
+        return "gngl";
+    }
     
 }

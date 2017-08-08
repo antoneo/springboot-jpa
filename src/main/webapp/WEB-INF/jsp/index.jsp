@@ -23,8 +23,8 @@
 		<script src="toolkit/ace/js/ace-elements.min.js"></script>
 		<script src="toolkit/ace/js/ace.min.js"></script>
 		<script src="toolkit/ace/js/ace-extra.min.js"></script>
-		<script src="menu/js/sidebar-menu(easyui).js"></script>
-		<script src="menu/js/dsk.js"></script>
+		<script src="app/menu/js/sidebar-menu(easyui).js"></script>
+		<script src="app/menu/js/dsk.js"></script>
 
 	</head>
 	
