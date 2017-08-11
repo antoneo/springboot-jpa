@@ -19,8 +19,18 @@ public class IndexController {
 	@Autowired
 	private XTGNRepository xtgnRepository;
 	
+	@RequestMapping(value={"/index","/index.jsp"})
+    public String index() {
+        return "index";
+    }
+
+	@RequestMapping(value={"/gngl"})
+    public String gngl() {
+        return "gngl";
+    }
+	
 	@RequestMapping(value="/getMenu",method=RequestMethod.POST)
-    public List getMenu(){
+    public List<Map<String,Object>> getMenu(){
 		List<Map<String,Object>> menu=new ArrayList<Map<String,Object>>();
     	List<XTGN> lists=xtgnRepository.findAllByOrderBySeqXtgnAsc();
     	for(XTGN xtgn:lists){

@@ -8,16 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LoginController {
 	
-	
-	
-	@RequestMapping(value={"/","/index","/index.jsp"})
-    public String home() {
-        return "index";
+	@RequestMapping(value={"/","/login","/login.jsp"})
+    public String login() {
+        return "login";
     }
-
-	@RequestMapping(value={"/gngl"})
-    public String gngl() {
-        return "gngl";
-    }
+	
     
 }

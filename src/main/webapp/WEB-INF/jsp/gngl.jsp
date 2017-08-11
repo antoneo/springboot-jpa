@@ -6,6 +6,7 @@
 		<title>功能管理</title>
 		<script src="toolkit/jquery/jquery.min.js"></script>
 		<script src="toolkit/bootstrap/js/bootstrap.min.js"></script>
+		<script src="toolkit/bootstrap-table/js/bootstrap-table.min.js"></script>
 		<script src="app/bTreeGrid/js/bTreeGrid.js"></script>
 	</head>
 	<body>
