@@ -1,9 +1,9 @@
-package com.Ace;
+package com.ace;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.Ace.web.service.XTGNRepository;
+import com.ace.web.service.XTGNRepository;
 
 public class AppTest {
 	@Autowired

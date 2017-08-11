@@ -1,4 +1,4 @@
-package com.Ace.web.controller;
+package com.ace.web.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Ace.domain.GNMX;
-import com.Ace.domain.XTGN;
-import com.Ace.web.service.XTGNRepository;
+import com.ace.domain.GNMX;
+import com.ace.domain.XTGN;
+import com.ace.web.service.XTGNRepository;
 
 @RestController
 public class IndexController {

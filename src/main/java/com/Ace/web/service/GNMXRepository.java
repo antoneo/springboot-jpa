@@ -1,4 +1,4 @@
-package com.Ace.web.service;
+package com.ace.web.service;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.Ace.domain.GNMX;
+import com.ace.domain.GNMX;
 
 @Repository
 public interface GNMXRepository extends JpaRepository<GNMX, Integer> {

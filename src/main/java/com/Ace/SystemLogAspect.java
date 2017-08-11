@@ -1,4 +1,4 @@
-package com.Ace;
+package com.ace;
 
 import java.util.Arrays;
 
@@ -24,7 +24,7 @@ public class SystemLogAspect {
 	private Gson gson = new Gson();
 
 	// 申明一个切点 里面是 execution表达式
-	@Pointcut("execution(public * com.Ace.web.controller.*.*(..))")
+	@Pointcut("execution(public * com.ace.web.controller.*.*(..))")
 	private void controllerAspect() {
 	}
 

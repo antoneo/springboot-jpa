@@ -1,4 +1,4 @@
-package com.Ace.domain;
+package com.ace.domain;
 
 import java.io.Serializable;
 
@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="spi_gnmx")
+@Table(name="ACE_GNMX")
 public class GNMX implements Serializable{
 
 	/**
@@ -20,18 +20,18 @@ public class GNMX implements Serializable{
 	private static final long serialVersionUID = 2099848757922284112L;
 
 	@Id
-	@Column(name="id_gnmx",nullable = false)
+	@Column(name="ID_GNMX",nullable = false)
 	private int id;
 	
-	@Column(name="id_xtgn",nullable = false)
+	@Column(name="ID_XTGN",nullable = false)
 	private int idXtgn;
-	@Column(name="nm_gnmx",nullable = false)
+	@Column(name="NM_GNMX",nullable = false)
 	private String name;
-	@Column(name="url_gnmx")
+	@Column(name="URL_GNMX")
 	private String urlGnmx;
-	@Column(name="ico_gnmx")
+	@Column(name="ICO_GNMX")
 	private String icoGnmx;
-	@Column(name="seq_gnmx",nullable = false)
+	@Column(name="SEQ_GNMX",nullable = false)
 	private String seqGnmx;
 	
 	
@@ -96,6 +96,6 @@ public class GNMX implements Serializable{
 
 
 	public String toString(){
-		return "GNMX [id_gnmx="+id+",id_xtgn="+idXtgn+",nm_gnmx="+name+",ico_xtgn="+icoGnmx+",url_gnmx="+urlGnmx+",seq_gnmx="+seqGnmx+"]";
+		return "ACE_GNMX [ID_GNMX="+id+",ID_XTGN="+idXtgn+",NM_GNMX="+name+",ICO_XTGN="+icoGnmx+",URL_GNMX="+urlGnmx+",SEQ_GNMX="+seqGnmx+"]";
 	}
 }

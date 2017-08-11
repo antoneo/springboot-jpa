@@ -1,4 +1,4 @@
-package com.Ace.domain;
+package com.ace.domain;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="spi_xtgn")
+@Table(name="ACE_XTGN")
 public class XTGN implements Serializable{
 
 	/**
@@ -24,20 +24,20 @@ public class XTGN implements Serializable{
 
 	@Id
 	@GeneratedValue
-	@Column(name="id_xtgn")
+	@Column(name="ID_XTGN")
 	private int id;
 	
-	@Column(name="nm_xtgn",nullable = false)
+	@Column(name="NM_XTGN",nullable = false)
 	private String name;
 	
-	@Column(name="ico_xtgn",nullable = false)
+	@Column(name="ICO_XTGN",nullable = false)
 	private String icoXtgn;
 	
-	@Column(name="seq_xtgn",nullable = false)
+	@Column(name="SEQ_XTGN",nullable = false)
 	private String seqXtgn;
 	
 	@OneToMany(cascade={CascadeType.ALL})
-	@JoinColumn(name="id_xtgn")
+	@JoinColumn(name="ID_XTGN")
 	private List<GNMX> gnmx=new ArrayList<GNMX>();
 
 	public int getId() {
@@ -78,6 +78,6 @@ public class XTGN implements Serializable{
 	}
 
 	public String toString(){
-		return "XTGN [id_xtgn="+id+",nm_xtgn="+name+",ico_xtgn="+icoXtgn+",seq_xtgn="+seqXtgn+"]";
+		return "ACE_XTGN [ID_XTGN="+id+",NM_XTGN="+name+",ICO_XTGN="+icoXtgn+",SEQ_XTGN="+seqXtgn+"]";
 	}
 }

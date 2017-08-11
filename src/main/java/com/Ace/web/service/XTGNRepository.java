@@ -1,4 +1,4 @@
-package com.Ace.web.service;
+package com.ace.web.service;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.Ace.domain.XTGN;
+import com.ace.domain.XTGN;
 
 @Repository
 public interface XTGNRepository extends JpaRepository<XTGN, Integer> {
