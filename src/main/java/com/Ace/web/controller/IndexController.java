@@ -19,6 +19,11 @@ public class IndexController {
 	@Autowired
 	private XTGNRepository xtgnRepository;
 	
+	@RequestMapping(value={"/","/login","login.jsp"})
+    public String login() {
+        return "login";
+    }
+	
 	@RequestMapping(value={"/index","/index.jsp"})
     public String index() {
         return "index";
